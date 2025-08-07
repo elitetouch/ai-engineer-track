@@ -13,7 +13,23 @@ print("Your exam score is", exam_score)
 
 
 #calculator using input
+
 num1 = float(input("Enter first number: "))
 num2 = float(input("Enter second number: "))
-sum_result = num1 + num2
-print(f"The sum of {num1} and {num2} is {sum_result}"  )
+
+operation = input("Enter an operation (+, -, *, /): ")
+if operation == '+':
+    result = num1 + num2
+elif operation == '-':
+    result = num1 - num2
+elif operation == '*':
+    result = num1 * num2
+elif operation == '/':
+    result = num1 / num2
+else:
+    result = None
+
+if result is not None:
+    print(f"The result of {num1} {operation} {num2} = {result}")
+else:
+    print("Invalid operation")
