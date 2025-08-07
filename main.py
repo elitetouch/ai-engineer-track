@@ -4,6 +4,6 @@
 
 #rint(f"welcome to python {name} !")
 
-name = "peter"
+#name = "peter"
 
 print(f"my name is {name} !")
