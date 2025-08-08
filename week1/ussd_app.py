@@ -1,3 +1,5 @@
+import streamlit as st
+
 # this is a ussd application
 # print the options on the screen
 # add input to enter the option number
