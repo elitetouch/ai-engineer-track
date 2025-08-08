@@ -2,7 +2,7 @@ import streamlit as st
 
 from PIL import Image
 
-st.title("USSD Application")
+st.title("KUDA BANK Application")
 
 # Upload image file
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
