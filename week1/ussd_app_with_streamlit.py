@@ -1,9 +1,9 @@
 import streamlit as st
 
-from PIL import Image
 
 st.title("KUDA BANK Application")
 
+<<<<<<< HEAD
 # Upload image file
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
@@ -12,6 +12,8 @@ uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png
 #     image = Image.open(uploaded_file)
 #     st.image(image, caption="Uploaded Image", use_container_width=True)
 
+=======
+>>>>>>> 7cc0c0c826d5b24685e7b7b22a9c26130bc55f5e
 
 balance = 1000
 
