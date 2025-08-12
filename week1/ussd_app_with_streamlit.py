@@ -3,18 +3,13 @@ import streamlit as st
 
 st.title("KUDA BANK Application")
 
-<<<<<<< HEAD
-# Upload image file
-uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
+# Upload image file
+# uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 # if uploaded_file is not None:
 #     # Open and display the image
 #     image = Image.open(uploaded_file)
 #     st.image(image, caption="Uploaded Image", use_container_width=True)
-
-=======
->>>>>>> 7cc0c0c826d5b24685e7b7b22a9c26130bc55f5e
-
 balance = 1000
 
 # Show options
