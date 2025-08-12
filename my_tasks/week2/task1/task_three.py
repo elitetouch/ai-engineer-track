@@ -17,8 +17,8 @@ print(fruit_list)
 
 #Ask the user for a sentence and print each word on a new line.
 user_sentence = input("Enter a sentence: ")
-for word in user_sentence.split():
-    print(word)
+word = "\n".join(user_sentence.split())
+print(word)
 
 #Replace all spaces in a string with underscores (_).
 text = "Hello World"

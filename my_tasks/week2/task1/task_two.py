@@ -26,11 +26,10 @@ text_with_spaces = "   Hello World   "
 print(text_with_spaces.strip())
 
 #Ask the user to enter a sentence and print the number of vowels in it.
-user_sentence = input("Enter a sentence: ")
-vowels = set("aeiou") 
-vowel_count = set(user_sentence.lower()) & vowels
-has_all_vowels = vowels.issubset(user_sentence.lower())
-print(has_all_vowels)
+user_sentence = input("Enter a sentence: ").lower()
+vowels = "aeiou"
+vowel_count = user_sentence.count("a") + user_sentence.count("e") + user_sentence.count("i") + user_sentence.count("o") + user_sentence.count("u")
+print(vowel_count)
 
 #Convert a string "1234" to an integer and multiply it by 2.
 number_str = "1234"

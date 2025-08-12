@@ -21,10 +21,8 @@ print(f"Hello, {user}!")
 
 #Write a program to count the number of characters in a string without using len()
 user_word = input("Enter your word: ")
-character_count = 0
-for char in user_word:
-    character_count += 1
-print(f"The character count is: {character_count}")
+
+print(f"The character count is: {user_word.count('') - 1}")
 
 #Given "Hello World", replace "World" with "Python"
 text = "Hello World"
