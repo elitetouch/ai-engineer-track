@@ -6,7 +6,25 @@ import streamlit as st
 st.title("WORD CHECKER")
 # Ask the user to input a word.
 
+check = st.radio(
+  
+    ["***Character Count***", "***Word Count***"],
+    captions=[
+        "Count the number of characters in the text.",
+        "Count the number of words in the text.",
+    ],
+)
 
+
+
+txt = st.text_area(
+    "Text to analyze",
+    "",
+)
+
+
+
+st.write(f"You wrote {len(txt)} characters.")
 
 txt = st.text_area(
     "Text to analyze",
@@ -15,18 +33,15 @@ txt = st.text_area(
 
 st.write(f"You wrote {len(txt)} characters.")
 
-genre = st.radio(
-    "What's your favorite movie genre",
-    [":rainbow[Comedy]", "***Drama***", "Documentary :movie_camera:"],
+operation = st.radio(
+    "Select An operation to be done on the text",
+    ["***All Uppercase***","***All Lowercase***","***Title Case***","***Reverse Text***","***Word Search***"],
     captions=[
-        "Laugh out loud.",
-        "Get the popcorn.",
-        "Never stop learning.",
+        "Convert the text to all uppercase letters.",
+        "Convert the text to all lowercase letters.",
+        "Convert the text to title case.",
+        "Reverse the text.",
+        "Search for a word in the text.",
     ],
 )
-
-if genre == ":rainbow[Comedy]":
-    st.write("You selected comedy.")
-else:
-    st.write("You didn't select comedy.")
 
