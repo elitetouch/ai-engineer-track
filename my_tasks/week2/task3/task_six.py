@@ -26,3 +26,4 @@ print("Gender:", gender)
 print("Course Track:", course_track)
 print("Current Month:", months_of_year[current_month - 1])
 print("Current Day:", days_of_week[current_day - 1])
+
