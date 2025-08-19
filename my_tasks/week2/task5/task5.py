@@ -12,7 +12,7 @@ contacts = dict(zip(names, numbers))
 search_name = input("Enter a name to look up: ")
 
 # Use .get() for safe retrieval
-phone = contacts.get(search_name, "❌ Name not found in contacts!")
+phone = contacts.get(search_name, "Name not found in contacts!")
 
 #  Display result
 print(f"Phone number: {phone}")
