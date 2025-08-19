@@ -7,7 +7,7 @@ store = {"Book": 10, "Pen": 20, "Bag": 5}
 # show the store inventory before purchase
 print("Before purchase:", store)
 
-item = input("Enter the item you want to buy (Book, Pen, Bag): ")
+item = input("Enter the item you want to buy (Book, Pen, Bag): ").title()
 quantity = int(input(f"Enter quantity of {item} you want to purchase: "))
 
 # Directly subtract using -=
