@@ -1,8 +1,8 @@
-import streamlit as st
-
+# USSD Application
 # this is a ussd application
 # print the options on the screen
 # add input to enter the option number
+# created by peter okonmah
 
 print("Welcome to the USSD application")
 print("1. Check Balance")
