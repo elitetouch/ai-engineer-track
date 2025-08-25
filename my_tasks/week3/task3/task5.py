@@ -1,5 +1,5 @@
 # USSD Application
-# This is a USSD application with control flow 
+# This is a USSD application with control flow and input validation
 # Created by Peter Okonmah
 
 print("=== Welcome to the USSD Application ===")
@@ -15,16 +15,15 @@ while True:
 
     option = input("Please enter the option number: ")
 
-    if option == "1":
+    if option == '1':
         print("\nChecking balance...")
         print(f"Your balance is N{balance}.")
 
-    elif option == "2":
+    elif option == '2':
         print("\nYou selected Buy Airtime.")
         airtime = input("Enter the amount of airtime to buy: ")
 
-        # Control flow validation (number check without isdigit/try)
-        if airtime != "" and all(ch in "0123456789" for ch in airtime):
+        try:
             airtime = int(airtime)
             if airtime <= balance:
                 balance -= airtime
@@ -32,14 +31,14 @@ while True:
                 print(f"Your new balance is N{balance}.")
             else:
                 print("Insufficient balance.")
-        else:
+        except ValueError:
             print("Invalid input. Please enter a valid number.")
 
-    elif option == "3":
+    elif option == '3':
         print("\nYou selected Pay Bill.")
         bill = input("Enter the bill amount to pay: ")
 
-        if bill != "" and all(ch in "0123456789" for ch in bill):
+        try:
             bill = int(bill)
             if bill <= balance:
                 balance -= bill
@@ -47,10 +46,10 @@ while True:
                 print(f"Your new balance is N{balance}.")
             else:
                 print("Insufficient balance.")
-        else:
+        except ValueError:
             print("Invalid input. Please enter a valid number.")
 
-    elif option == "4":
+    elif option == '4':
         print("\nYou selected Exit.")
         print("Thank you for using the USSD application. Goodbye!")
         break  # exit loop
